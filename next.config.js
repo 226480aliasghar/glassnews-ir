@@ -2,16 +2,13 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  experimental: {
-    appDir: false,
-  },
   i18n: {
     locales: ['fa', 'en'],
     defaultLocale: 'fa',
     localeDetection: false,
   },
   images: {
-    domains: ['localhost', 'glassnews.ir'],
+    domains: ['localhost', 'glassnews.ir', 'images.unsplash.com'],
     formats: ['image/webp', 'image/avif'],
   },
   async headers() {
